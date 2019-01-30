@@ -16,10 +16,9 @@ $( document ).ready(function() {
     }
     // Function to add a new action button
     function addNewButton(){
-        $("#addGif").on("click", function(event){
+        $("#addGif").on("click", function(){
             event.preventDefault()
         var action = $("#action-input").val().trim();
-        console.log(action)
         if (action == ""){
           return false; // added so user cannot add a blank button
         }
